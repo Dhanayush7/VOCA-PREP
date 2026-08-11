@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6fb;
+  color: #1f2d3d;
+}
+
+.container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.hidden {
+  display: none;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#track-options label {
+  display: block;
+  margin: 8px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccd6e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+.pipeline {
+  font-weight: 600;
+}
+
+.transcript {
+  min-height: 24px;
+  background: #eef5ff;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.evaluation {
+  background: #f7f9fc;
+  border-left: 4px solid #3b82f6;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  white-space: pre-line;
+}
+
+pre {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 14px;
+  border-radius: 8px;
+  overflow: auto;
+}

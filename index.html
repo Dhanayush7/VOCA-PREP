@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOCA-PREP Interview Simulator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>VOCA-PREP</h1>
+
+      <section id="step-select" class="card">
+        <h2>Step 1 — Choose interview</h2>
+        <label class="label" for="candidate-name">Candidate name</label>
+        <input id="candidate-name" value="Dhanayush" />
+        <p>Choose Interview</p>
+        <div id="track-options"></div>
+        <button id="start-btn">Start Interview</button>
+      </section>
+
+      <section id="step-interview" class="card hidden">
+        <h2>Step 2 — AI starts interviewing you</h2>
+        <p id="ai-question"></p>
+
+        <h3>Step 3 — Sarvam converts your voice</h3>
+        <p class="pipeline">🎤 Voice → Sarvam Speech-to-Text → Your answer</p>
+        <label class="label" for="voice-input">Your voice response (simulated)</label>
+        <textarea id="voice-input" rows="4" placeholder="Speak/type your answer..."></textarea>
+        <button id="convert-btn">Convert with Sarvam STT</button>
+        <p id="transcript" class="transcript"></p>
+
+        <h3>Step 4 — AI evaluates it</h3>
+        <button id="submit-answer-btn">Evaluate Answer</button>
+        <div id="evaluation" class="evaluation"></div>
+
+        <h3>Step 5 — AI follow-up</h3>
+        <p id="follow-up"></p>
+      </section>
+
+      <section id="step-report" class="card hidden">
+        <h2>Step 6 — Final report</h2>
+        <pre id="final-report"></pre>
+        <button id="restart-btn">Restart</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
